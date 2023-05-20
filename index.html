@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWR Settings String 1.10.0</title>
+    <style>
+
+        body {
+            background-color: #E0E4EB;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrer horizontalement */
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #1b3348;
+        }
+
+        th {
+            background-color: #1b3348;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F5F7FA; /* Couleur de fond pour les lignes paires */
+        }
+
+        .copy-icon {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background-image: url("copy-icon.png");
+            background-size: cover;
+            cursor: pointer;
+            margin-left: 5px;
+            background-position: -5px;
+            background-repeat: no-repeat;
+            float: right;
+        }
+
+        h1 {
+            font-family: 'Sherwood', cursive;
+            text-align: center;
+            color: #1b3348;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sherwood&display=swap" rel="stylesheet">
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wind Waker Randomizer Racing Settings String (v1.10.0)</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Settings String</th>
+                <th>Tracker Link</th>
+            </tr>
+            
+            <tr>
+                <td>Miniblins</td>
+                <td>MS4xMC4wAEEABwMCAHOGwAMMcADC+Q8AAskPKQAG <span class="copy-icon" onclick="copyToClipboard('MS4xMC4wAEEABwMCAHOGwAMMcADC+Q8AAskPKQAG')"</td>
+                <td><a href="https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/MS4xMC4wAEEABwMCAHOGwAMMcADC+Q8AAskPKQAG" target="_blank">Miniblins tracker</a>
+            </tr>
+            
+            <tr>
+                <td>Season 5</td>
+                <td>MS4xMC4wAEEAFQMiAJPowAMMsACCcQ8AAMkHAQAA <span class="copy-icon" onclick="copyToClipboard('MS4xMC4wAEEAFQMiAJPowAMMsACCcQ8AAMkHAQAA')"</td>
+                <td><a href="https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/MS4xMC4wAEEAFQMiAJPowAMMsACCcQ8AAMkHAQAA" target="_blank">Season 5 tracker</a>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
