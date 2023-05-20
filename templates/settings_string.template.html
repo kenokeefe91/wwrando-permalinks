@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWR Settings String {{ rando_version }}</title>
+    <style>
+
+        body {
+            background-color: #E0E4EB;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrer horizontalement */
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #1b3348;
+        }
+
+        th {
+            background-color: #1b3348;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F5F7FA; /* Couleur de fond pour les lignes paires */
+        }
+
+        .copy-icon {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background-image: url("copy-icon.png");
+            background-size: cover;
+            cursor: pointer;
+            margin-left: 5px;
+            background-position: -5px;
+            background-repeat: no-repeat;
+            float: right;
+        }
+
+        h1 {
+            font-family: 'Sherwood', cursive;
+            text-align: center;
+            color: #1b3348;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sherwood&display=swap" rel="stylesheet">
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wind Waker Randomizer Racing Settings String (v{{ rando_version }})</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Settings String</th>
+                <th>Tracker Link</th>
+            </tr>
+            {% for setting in settings %}
+            <tr>
+                <td>{{ setting.name }}</td>
+                <td>{{ setting.string }} <span class="copy-icon" onclick="copyToClipboard('{{ setting.string }}')"</td>
+                <td><a href="https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/{{ setting.string }}" target="_blank">{{ setting.name }} tracker</a>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
+
