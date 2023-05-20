@@ -1,0 +1,22 @@
+Wind waker randomizer Settings String inventory
+---
+
+This project is a simple web page automatically generated and uploaded on the following gh page :
+
+## Setup 
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Generate the setting page
+
+```bash
+source .venv/bin/activate
+python generate_page.py
+```
+
+Running this command you will have a build directory generated with an index.html page in it.
+
