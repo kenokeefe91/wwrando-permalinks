@@ -1,7 +1,7 @@
 Wind waker randomizer Settings String inventory
 ---
 
-This project is a simple web page automatically generated and uploaded on the following gh page :
+This project is a simple web page automatically generated and uploaded on the following gh page : https://kenokeefe91.github.io/wwrando-settings-string/
 
 ## Setup 
 
