@@ -20,3 +20,6 @@ python generate_page.py
 
 Running this command you will have a build directory generated with an index.html page in it.
 
+## Contribute
+
+To add a setting string simply add it to `data.json` file open a PR and once validated the github action will update the page
