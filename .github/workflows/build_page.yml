@@ -1,6 +1,9 @@
 name: Build page
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -26,3 +29,9 @@ jobs:
       - name: Generate Setting list page
         run: |
           python generate_page.py
+
+      - name: Deploy to ghpage
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: page
+
