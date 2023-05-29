@@ -98,7 +98,7 @@
             <tr>
                 <td>{{ setting.name }}</td>
                 <td>{{ setting.permalink }} <span class="copy-icon" onclick="copyToClipboard('{{ setting.permalink }}')"</td>
-                <td><a href="https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/{{ setting.permalink }}" target="_blank">{{ setting.name }} tracker</a>
+                <td><a href="{{ setting.tracker_link }}" target="_blank">{{ setting.name }} tracker</a>
             </tr>
             {% endfor %}
         </table>
@@ -108,6 +108,7 @@
         <ul>
             <li><a href="https://github.com/LagoLunatic/wwrando/releases/tag/{{ rando_version }}" target="_blank">Randomizer download page</a></li>
             <li><a href="https://www.wooferzfg.me/tww-rando-tracker/" target="_blank">Randomizer Tracker by Wooferzfg</a></li>
+            <li><a href="https://jaysc.github.io/tww-rando-tracker-coop/" target="_blank">Randomizer Coop Tracker by Jaysc</a></li>
             <li><a href="https://github.com/kenokeefe91/wwrando-permalinks" target="_blank">Github repository</a></li>
         <ul>
     </footer>

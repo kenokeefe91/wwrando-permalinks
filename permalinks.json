@@ -11,7 +11,8 @@
     },
     {
       "name": "Co-op",
-      "permalink": "MS4xMC4wAEEAFQsmANsMwQMcMAGCcQ8AAMkHAAAA"
+      "permalink": "MS4xMC4wAEEAFQsmANsMwQMcMAGCcQ8AAMkHAAAA",
+      "is_coop": true
     },
     {
       "name": "Allsanity",
