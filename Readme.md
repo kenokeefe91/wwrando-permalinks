@@ -22,4 +22,4 @@ Running this command you will have a build directory generated with an index.htm
 
 ## Contribute
 
-To add a setting string simply add it to `data.json` file open a PR and once validated the github action will update the page
+To add a setting string simply add it to `permalinks.json` file open a PR and once validated the github action will update the page

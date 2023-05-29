@@ -97,8 +97,8 @@
             {% for setting in settings %}
             <tr>
                 <td>{{ setting.name }}</td>
-                <td>{{ setting.string }} <span class="copy-icon" onclick="copyToClipboard('{{ setting.string }}')"</td>
-                <td><a href="https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/{{ setting.string }}" target="_blank">{{ setting.name }} tracker</a>
+                <td>{{ setting.permalink }} <span class="copy-icon" onclick="copyToClipboard('{{ setting.permalink }}')"</td>
+                <td><a href="https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/{{ setting.permalink }}" target="_blank">{{ setting.name }} tracker</a>
             </tr>
             {% endfor %}
         </table>

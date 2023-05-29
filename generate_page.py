@@ -3,7 +3,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
 def generate_setting_page():
-    config = read_json_config("data.json")
+    config = read_json_config("permalinks.json")
     setting_page_template = get_settings_page_template()
 
     setting_html = setting_page_template.render(config)
