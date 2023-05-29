@@ -10,14 +10,6 @@
       "permalink": "MS4xMC4wAEEAFQMiAJPowAMMsACCcQ8AAMkHAQAA"
     },
     {
-      "name": "S4",
-      "permalink": "MS4xMC4wAEEABQsiAAUAvgMcsAACAAAAAAGAIAAA"
-    },
-    {
-      "name": "S3",
-      "permalink": "MS4xMC4wAEEAFwMEAAQAvhMM8AADAAAAAAGAIAAA"
-    }
-    {
       "name": "Co-op",
       "permalink": "MS4xMC4wAEEAFQsmANsMwQMcMAGCcQ8AAMkHAAAA"
     },
@@ -48,6 +40,14 @@
     {
       "name": "Spoiler Log - Combat Secret Caves, Submarines",
       "permalink": "MS4xMC4wAEEAHwsmAgEAoAMUsAACAAAAAAGAAAAA"
+    },
+    {
+      "name": "S4",
+      "permalink": "MS4xMC4wAEEABQsiAAUAvgMcsAACAAAAAAGAIAAA"
+    },
+    {
+      "name": "S3",
+      "permalink": "MS4xMC4wAEEAFwMEAAQAvhMM8AADAAAAAAGAIAAA"
     }
   ]
 }
