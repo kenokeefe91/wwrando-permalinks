@@ -1,7 +1,7 @@
-Wind waker randomizer Settings String inventory
+Wind Waker Randomizer Settings String Inventory
 ---
 
-This project is a simple web page automatically generated and uploaded on the following gh page : https://kenokeefe91.github.io/wwrando-permalinks/
+This project is a simple web page that displays a list of settings for [The Wind Waker Randomizer](https://github.com/LagoLunatic/wwrando) races. The site is hosted at: https://kenokeefe91.github.io/wwrando-permalinks/
 
 ## Setup 
 
@@ -11,15 +11,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Generate the setting page
+## Generate the settings page
 
 ```bash
 source .venv/bin/activate
 python generate_page.py
 ```
 
-Running this command you will have a build directory generated with an index.html page in it.
+After running this command, you will have a build directory generated with an `index.html` page in it.
 
 ## Contribute
 
-To add a setting string simply add it to `permalinks.json` file open a PR and once validated the github action will update the page
+To add a settings permalink, simply add it to the `permalinks.json` file and open a pull request. Once validated, the GitHub action will automatically update the site.

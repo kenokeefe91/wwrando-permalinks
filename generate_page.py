@@ -18,10 +18,10 @@ def generate_page_data_from(config):
     page_data = {"rando_version": config["rando_version"], "settings": []}
 
     for setting in config["settings"]:
-        tracker_url = f"https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/{parse.quote(setting['permalink'], safe='')}"
-
-        if "is_coop" in setting and setting["is_coop"]:
+        if setting.get("is_coop"):
             tracker_url = "https://jaysc.github.io/tww-rando-tracker-coop"
+        else:
+            tracker_url = f"https://www.wooferzfg.me/tww-rando-tracker/#/tracker/new/{parse.quote(setting['permalink'], safe='')}"
 
         page_data["settings"].append(
             {
